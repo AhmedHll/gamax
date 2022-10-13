@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.rdr2 {
+    -webkit-clip-path: polygon(0 0, 46% 0, 45% 36%, 18% 100%, 0 100%);
+    clip-path: polygon(0 0, 46% 0, 45% 36%, 18% 100%, 0 100%);
+    filter: grayscale(100%);
+    z-index: 1;
+    -webkit-filter: grayscale(100%);
+}
+
+.ark {
+    -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 76% 100%, 50% 40%);
+    clip-path: polygon(52% 0, 100% 0, 100% 100%, 76% 100%, 50% 40%);
+    filter: grayscale(100%);
+    z-index: 1;
+    -webkit-filter: grayscale(100%);
+}
+
+.gtav {
+    -webkit-clip-path: polygon(46% 0, 52% 0, 51% 41%, 77% 100%, 18% 100%, 45% 36%);
+    clip-path: polygon(46% 0, 52% 0, 51% 41%, 77% 100%, 18% 100%, 45% 36%);
+    z-index: 1;
+    filter: grayscale(100%);
+}
+
+.rdr2:hover,
+.ark:hover,
+.gtav:hover {
+    filter: none;
+    -webkit-filter: none;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease-in infinite;
+    transition: 500ms linear;
+    -webkit-animation: zoom-in-zoom-out 5s ease-in infinite;
+    -webkit-transition: 500ms linear;
+    -moz-transition: 500ms linear;
+    -ms-transition: 500ms linear;
+    -o-transition: 500ms linear;
+}

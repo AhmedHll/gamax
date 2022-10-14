@@ -12,8 +12,6 @@ img {
     position: absolute;
     width: 100vw;
     height: 100vh;
-
-
 }
 
 .rdr2 {
@@ -45,11 +43,4 @@ img {
     filter: none;
     -webkit-filter: none;
     cursor: pointer;
-    animation: zoom-in-zoom-out 1s ease-in infinite;
-    transition: 500ms linear;
-    -webkit-animation: zoom-in-zoom-out 5s ease-in infinite;
-    -webkit-transition: 500ms linear;
-    -moz-transition: 500ms linear;
-    -ms-transition: 500ms linear;
-    -o-transition: 500ms linear;
 }
